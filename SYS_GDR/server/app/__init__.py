@@ -9,4 +9,21 @@ def create_app():
 
     db.init_app(app)
 
+    #IMPORTA O MODEL USER
+    from app.models.user_model import User
+    from app.models.campaign_model import Campaign
+
+    # IMPORTA O BLUEPRINT
+    from app.routes.user_routes import user_bp
+    from app.routes.campaign_routes import campaign_bp 
+    from app.routes.character_routes import character_bp
+    from app.routes.session_routes import session_bp
+
+    # REGISTRA O BLUEPRINT
+    app.register_blueprint(user_bp)
+    app.register_blueprint(campaign_bp)
+    app.register_blueprint(character_bp)
+    app.register_blueprint(session_bp)
+    #app.register_blueprint(auth_bp)
+
     return app
