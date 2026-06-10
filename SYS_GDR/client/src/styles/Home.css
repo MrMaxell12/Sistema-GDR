@@ -1,0 +1,27 @@
+.home {
+
+    display: flex;
+
+    background: #121212;
+
+    color: white;
+
+    min-height: 100vh;
+}
+
+.home-content {
+
+    flex: 1;
+
+    padding: 40px;
+}
+
+.home-content h1 {
+
+    margin-bottom: 30px;
+}
+
+.home-content h2 {
+
+    margin-bottom: 20px;
+} 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap');
+
 .navbar {
     position: sticky;
     top: 0;
@@ -18,7 +20,8 @@
 }
 
 .navbar-logo h2 {
-    font-size: 1.8rem;
+    font-family: "Libre Barcode 39 Text", system-ui;
+    font-size: 2.8rem;
     font-weight: 700;
 
     color: white;
