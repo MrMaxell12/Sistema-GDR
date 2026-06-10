@@ -8,8 +8,9 @@ user_bp = Blueprint(
     url_prefix="/users"
 )
 
-#CREATE 
 
+#CREATE 
+''' 
 @user_bp.route("/", methods=["POST"])
 def create_user():
 
@@ -27,7 +28,8 @@ def create_user():
     return jsonify({
         "message": "User created"
     }), 201
-
+    
+'''
 #READ ALL
 
 @user_bp.route("/", methods=["GET"])
